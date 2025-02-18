@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s/v1beta1
+kind: Kustomization
+
+bases:
+- ../../base
+
+images:
+- name: nginx
+  newname: nginx
+  newTag: 1.27.4
